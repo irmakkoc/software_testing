@@ -51,7 +51,7 @@ public class Point {
 
 	public int manhattanDistance(Point p)
 	{
-		return this.xDistance(p) + this.yDistance(p);
+		return Math.abs(this.x - p.x) + Math.abs(this.y - p.y);
 	}
 
 	public int squaredEuclideanDistance(Point p)
