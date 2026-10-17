@@ -108,7 +108,7 @@ public class Point {
 	{
 		List<Point> neighborhood = new ArrayList<Point>();
 		for (Point candidate : candidates) {
-			if (this.squaredEuclideanDistance(candidate) <= distance * distance) {
+			if (this.manhattanDistance(candidate) <= distance) {
 				neighborhood.add(candidate);
 			}
 		}
