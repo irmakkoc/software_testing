@@ -41,7 +41,7 @@ public class Point {
 
 	public int xDistance(Point p)
 	{
-		return p.x - this.x;
+		return Math.abs(p.x - this.x);
 	}
 
 	public int yDistance(Point p)
