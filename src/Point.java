@@ -7,10 +7,10 @@ import java.util.*;
  */
 public class Point {
 	public static final int HALF = 3;
-	public static final int largestX = 2 * HALF + 1;
-	public static final int smallestX = -(2 * HALF + 1);
-	public static final int largestY = 2 * HALF + 1;
-	public static final int smallestY = -(2 * HALF + 1);
+	public static final int largestX = HALF;
+	public static final int smallestX = -HALF;
+	public static final int largestY = HALF;
+	public static final int smallestY = -HALF;
 	public static final Point origin = new Point(0, 0);
 
 	public int x;
