@@ -95,7 +95,13 @@ public class Point {
 	{
 		int rX = 2 * origin.x - this.x;
 		int rY = 2 * origin.y - this.y;
-		return new Point(Math.max(smallestX, Math.min(largestX, rX)), Math.max(smallestY, Math.min(largestY, rY)));
+		if (rX < smallestX || rX > largestX ||rY < smallestY || rY > largestY) {
+		        throw new IllegalArgumentException(
+		            "Reflected point is outside the space"
+		        );
+		    }
+
+		    return new Point(rX, rY);
 	}
 
 	public List<Point> neighborhoodManhattan(List<Point> candidates, int distance)
