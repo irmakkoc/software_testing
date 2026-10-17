@@ -46,7 +46,7 @@ public class Point {
 
 	public int yDistance(Point p)
 	{
-		return p.y - this.y;
+		return Math.abs(p.y - this.y);
 	}
 
 	public int manhattanDistance(Point p)
