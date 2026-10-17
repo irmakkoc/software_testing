@@ -22,7 +22,7 @@ public class Point {
 
 	public Point()
 	{
-		this(-1, 1);
+		this(0, 0);
 	}
 
 	public Point(int x, int y)
