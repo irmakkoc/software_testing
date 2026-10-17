@@ -76,7 +76,7 @@ public class Point {
 			case SOUTHEAST: dx = 1; dy = -1; break;
 			case SOUTH: dx = 0; dy = -1; break;
 			case SOUTHWEST: dx = -1; dy = -1; break;
-			case WEST: dx = -2; dy = 0; break;
+			case WEST: dx = -1; dy = 0; break;
 			case NORTHWEST: dx = -1; dy = 1; break;
 		}
 		int nx = this.x + dx;
